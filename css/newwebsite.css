@@ -208,6 +208,14 @@ div.content {
   padding-bottom: 2rem;
 }
 
+.content iframe {
+	width: 80%;
+  height: auto;
+  border: 1px solid red;
+  padding-bottom: 2rem;
+}
+
+
 .content video {
   width: 80%;
 	height: auto;
@@ -349,7 +357,7 @@ h4 {
   }
 
   .rewatex {
-  
+
     width: 100%;
   }
 
