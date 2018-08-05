@@ -1,0 +1,310 @@
+body, html, {
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  margin-right: 7rem;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+header {
+  position: relative;
+  top:0;
+}
+
+.monospace {
+  font-family: 'Inconsolata', monospace;
+}
+
+.mouse-url{
+  cursor: url(img/left-arrow.png), auto;
+}
+
+.mouse2{
+  cursor: url(img/right-arrow.png), auto;
+}
+
+/*split screen*/
+
+.startscreen {
+  position: fixed;
+  background-color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/*left side*/
+
+.left {
+  left: 0;
+  background: url('img/3.jpg') no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+/*right side*/
+
+.right {
+  right: 0;
+  background-color: white;
+  width: 50%;
+  height: 100%;
+}
+
+.startlogo {
+  text-align: right;
+  width: 100%;
+  height: auto;
+  padding-top: 0.5rem;
+  position: static;
+  right: 0;
+  z-index: 300;
+}
+
+.startlogo a{
+  color: black;
+  text-decoration: none;
+}
+
+.designpeview {
+width: 100%;
+height: auto;
+}
+
+.designpeview img {
+  max-width: 50%;
+  height: auto;
+  padding: 0 6rem;
+  position: fixed;
+  top:50%;
+  transform: translate(-0%, -50%);
+}
+
+/*kategorien an seite*/
+
+.seitelinks {
+  z-index: 260;
+  transform: rotate(90deg)translateX(-50%);
+  position: fixed;
+  top:50%;
+  left: 0;
+}
+
+.seite {
+  z-index: 260;
+  transform: rotate(90deg)translateX(-50%);
+  position: fixed;
+  top:50%;
+  right: 0;
+}
+
+.seitelinks p {
+  font-family: 'Inconsolata' , monospace;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.9rem;
+  color: black;
+  text-decoration: none;
+}
+
+.seite p {
+  font-family: 'Inconsolata' , monospace;
+  text-align: center;
+  display: inline-block;
+  margin: 2rem;
+  font-size: 0.9rem;
+  color: black;
+  text-decoration: none;
+}
+
+/*für mobile version*/
+
+.designcontent {
+  width: 60%;
+  padding: 15rem 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.designcontent img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+
+/*navigation*/
+
+.navbar {
+  z-index: 5;
+  width: 100%;
+  position: fixed;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  top: 0;
+}
+
+.navbar a {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color:   black;
+  font-size: 0.9rem;
+}
+
+.nav-item {
+  padding-right: 2rem;
+}
+
+.dropdown-toggle {
+  background-color: inherit;
+  border: none;
+}
+
+.dropdown-item a {
+  font-family: 'Cabin', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: black;
+  background-color: inherit;
+  background-color: inherit;
+  border: none;
+}
+
+.dropdown-menu {
+  list-style-type: disc;
+  background-color: inherit;
+  border: none;
+}
+
+.dropdown-item:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -20px;
+}
+
+.dropdown-item:hover {
+  background-color: inherit;
+}
+
+.navbarDropdown {
+  background-color: inherit;
+  border: none;
+}
+
+.mobile {
+  opacity: 0;
+  overflow: hidden;
+}
+
+.navbar-collapse {
+  position: relative;
+}
+
+
+@media screen and (max-width: 1080px) {
+
+  .mobile {
+    opacity: 0;
+  }
+
+  .designcontent h2 {
+    font-size: 26px;
+  }
+
+  .startlogo h1{
+    font-size: 5vw;
+    padding-top: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+
+  .startscreen {
+    position: relative;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    overflow-x: hidden;
+    height: auto;
+  }
+
+  .fullscreen {
+    opacity: 0;
+  }
+  .navbar {
+    width: 100%;
+    margin-left: 1rem;
+    position: relative;
+    display: inline-block;
+  }
+
+  .navbar-collapse {
+    max-height: none;
+  }
+
+  .introduction {
+    padding: 1rem;
+  }
+
+  .designcontent {
+    width: 100%;
+    padding-top: 1.5rem;
+    display: inline;
+  }
+
+  .startlogo {
+    text-align: center;
+    padding-top: 1rem;
+    position: absolute;
+    width: 54%;
+    top: 0;
+  }
+
+  .introduction h2 {
+    font-size: 6vw;
+  }
+
+  .startlogo h1{
+    text-align: right;
+    margin-right: 0.7rem;
+    display: inline-block;
+    font-size: 7vw;
+  }
+
+  .mobile {
+    width:100%;
+    height: auto;
+    opacity: 1;
+  }
+
+  .photosindex {
+    width:100%;
+    margin: 0;
+    padding:0;
+    text-align: center;
+  }
+
+  .photosindex img {
+    margin: 0;
+    padding:0.5rem 0;
+  }
+}
